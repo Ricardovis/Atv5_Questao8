@@ -1,0 +1,32 @@
+programa {
+	funcao inicio() {
+		
+		/*Escreva um programa que leia a velocidade de um carro. Se ele
+        /ultrapassar 80Km/h, mostre uma mensagem dizendo que
+        /ele foi multado. A multa vai custar R$7,00 por cada Km
+         acima do limite.*/
+
+        real velocid
+        real distanc
+        
+        escreva("A quantos km/h você está?(escreva somente os numeros)\n ")
+        leia(velocid)
+        limpa()
+        
+        escreva("A quantos km você está andando á essa velocidade?(escreva somente os numeros) \n ")
+        leia(distanc)
+        limpa()
+        
+        se(velocid > 80){
+            
+            escreva("Você pagará ", distanc*7, " reais de multa")
+            
+        }senao{
+            
+            escreva("Parabéns, você está livre de multas!")
+            
+        }
+        
+	}
+}
+
